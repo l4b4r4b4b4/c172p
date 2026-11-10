@@ -19,7 +19,7 @@ You start the tutorial cruising at around 1000 ft and 90 kts. To begin your desc
             electrical.reset_battery_and_circuit_breakers();
             c172p.click("engine-repair", 6.0);
             c172p.dialog_battery_reload();
-            setprop("/engines/active-engine/oil-level", sim/model/c172p/engine_flag_0 ? 7 : 8);
+            setprop("/engines/active-engine/oil-level", getprop("sim/model/c172p/engine_flag_0") ? 7 : 8);
             setprop("/engines/active-engine/carb_ice", 0.0);
             setprop("/fdm/jsbsim/engine/damage-level", 0.0);
         </script>
